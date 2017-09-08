@@ -12,7 +12,7 @@
  *
  */
 @import "bootstrap";
-
+// General styling
  h1.display-3{
    font-family: 'Mr De Haviland', cursive;
  }
@@ -21,23 +21,50 @@
    background-image: url(image-path('purple-back.jpg'));
    background-attachment: fixed;
  }
- nav{
-   background-color: lavender;
-   margin-bottom: 0;
-   border-style: none;
+ .vertical-center {
+   min-height: 100%;
+   // min-height: 100vh;
+   width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
  }
-  .dropdown {
-    position: static;
-    border-style: none;
+ .text-align-center{
+   text-align: center;
+ }
+  .text-align-right{
+    text-align: right;
   }
-  .dropdown-menu {
-    width: 100%;
-    text-align: center;
-  }
-  li.dropdown-menu {
-    display: inline-block;
+  .full-view{
+    padding: 75px;
+    min-height: 100vh;
+
   }
 
+ //NavBar styling
+nav{
+ background-color: lavender;
+ margin-bottom: 0;
+ border-style: none;
+}
+
+.navbar-brand{
+ background-color: lavender;
+ border-style: none;
+ box-shadow: 0;
+}
+.dropdown {
+  position: static;
+  border-style: none;
+}
+.dropdown-menu {
+  width: 100%;
+  text-align: center;
+}
+li.dropdown-menu {
+  display: inline-block;
+  }
+// Jumbotron styling
   .jumbotron{
     height: 100vh;
     margin: 0;
@@ -45,48 +72,121 @@
     color: white;
   }
 
-  .vertical-center {
-    min-height: 100%;
-    // min-height: 100vh;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .text-align-center{
-    text-align: center;
-  }
-   .text-align-right{
-     text-align: right;
-   }
-
-   .full-view{
-     padding: 75px;
-     min-height: 100vh;
-
-   }
-
+// About page Styling
    #about{
      background-color: rgba(80,80,80,0.5);
    }
 
+
+// Education Page
    #edu{
-     background-color: purple;
+     background-color: rgba(199,21,133,0.5);
+   }
+   .card{
+     background-color: gray;
    }
 
+// Work Page
    #work{
-     background-color: pink;
+     background-color: rgba(255,192,203,0.60);
    }
 
+  .wrapper {
+    width: 100%;
+    min-height: 100vh;
+    height: 100%;
+    font: normal 16px/26px;
+    color: #fff;
+    padding: 100px 20px 200px;
+    box-sizing: border-box;
+  }
+
+  .block {
+    z-index: 1;
+    position: relative;
+    &:before {
+      content: "";
+      position: absolute;
+      height: calc(100% - 40px);
+      width: 1px;
+      background-color: #f2f2f2;
+      left: 50%;
+      margin-top: 90px;
+    }
+  }
+
+  .title {
+    font: bold 42px/52px;
+    text-align: center;
+    padding: 20px;
+    transition: all 0.8s ease-in-out;
+  }
+
+  .each-event {
+    background-color: #f4f4f4;
+    color: #777;
+    padding: 15px;
+    margin: 60px 20px;
+    width: 300px;
+    position: relative;
+    border-radius: 4px;
+    box-sizing: border-box;
+    transition: all 0.3s ease-in-out;
+    &:before {
+      content: "";
+      position: absolute;
+      top: calc(50% - 8px);
+      left: -27px;
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      background-color: #fff;
+      box-shadow: 0 4px 20px -4px rgba(64, 64, 64, 0.8);
+    }
+    &:nth-child(odd) {
+      margin-left: calc(50% + 20px);
+    }
+    &:nth-child(even) {
+      margin-left: calc(50% - 321px);
+      &:before {
+        left: calc(100% + 14px);
+      }
+    }
+  }
+
+  .title.non-focus {
+    font-size: 24px;
+    line-height: 34px;
+    transition: all 0.8s ease-in-out;
+  }
+
+  .each-event.non-focus {
+    color: #d2d2d2;
+    background: #e6e6e6;
+    margin-top: 90px;
+    transform: rotateZ(45deg);
+    transition: all 0.8s ease-in-out;
+    &:before {
+      opacity: 0;
+      background-color: #aaa;
+    }
+  }
+
+
+
+
+//portfolio page
    #portfolio{
      background-color: teal;
    }
 
+
+//Contact Page
    #contact{
      background-color: green;
    }
 
+// Blog Page
    #blog{
      background-color: blue;
    }
