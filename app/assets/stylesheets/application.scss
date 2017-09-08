@@ -21,7 +21,6 @@
    background-image: url(image-path('purple-back.jpg'));
    background-attachment: fixed;
  }
-
  nav{
    background-color: lavender;
    margin-bottom: 0;
@@ -42,7 +41,8 @@
   .jumbotron{
     height: 100vh;
     margin: 0;
-    background-color: none;
+    background-color: rgba(32,32,32,0.8);
+    color: white;
   }
 
   .vertical-center {
@@ -68,7 +68,7 @@
    }
 
    #about{
-     background-color: orange;
+     background-color: rgba(80,80,80,0.5);
    }
 
    #edu{
