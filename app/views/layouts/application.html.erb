@@ -35,11 +35,10 @@
 
     <%= yield %>
 
-
+    <%= javascript_include_tag ('timeline.js')%>
     <%= render 'layouts/about'%>
     <%= render 'layouts/edu'%>
     <%= render 'layouts/work'%>
-    <%= javascript_include_tag ('timeline.js')%>
     <%= render 'layouts/portfolio'%>
     <%= render 'layouts/contact'%>
     <%= render 'layouts/blog'%>
