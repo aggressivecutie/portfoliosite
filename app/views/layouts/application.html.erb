@@ -5,7 +5,7 @@
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload', 'timeline.js' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
     <!--google fonts link-->
     <link href="https://fonts.googleapis.com/css?family=Josefin+Slab|Mr+De+Haviland" rel="stylesheet">
     <!--favicon-->
@@ -35,7 +35,7 @@
 
     <%= yield %>
 
-    <!-- <%= javascript_include_tag ('timeline.js')%> -->
+    <%= javascript_include_tag ('timeline.js')%>
     <%= render 'layouts/about'%>
     <%= render 'layouts/edu'%>
     <%= render 'layouts/work'%>
