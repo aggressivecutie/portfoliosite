@@ -75,12 +75,14 @@ li.dropdown-menu {
 // About page Styling
    #about{
      background-color: rgba(80,80,80,0.5);
+     color: white;
    }
 
 
 // Education Page
    #edu{
-     background-color: rgba(199,21,133,0.5);
+     background-color: rgba(32,32,32,0.8);
+     color: white;
    }
    .card{
      background-color: gray;
@@ -88,7 +90,8 @@ li.dropdown-menu {
 
 // Work Page
    #work{
-     background-color: rgba(255,192,203,0.60);
+     background-color: rgba(80,80,80,0.5);
+     color: white;
    }
 
   .wrapper {
@@ -177,16 +180,19 @@ li.dropdown-menu {
 
 //portfolio page
    #portfolio{
-     background-color: teal;
+     background-color: rgba(32,32,32,0.8);
+     color: white;
    }
 
 
 //Contact Page
    #contact{
-     background-color: green;
+     background-color: rgba(80,80,80,0.5);
+     color: white;
    }
 
 // Blog Page
    #blog{
-     background-color: blue;
+     background-color: rgba(32,32,32,0.8);
+     color: white;
    }
