@@ -1,0 +1,1 @@
+function check_for_fade(){var e=$window.height();$.each($element,function(){var o=$(this),n=o.outerHeight(),c=o.offset().top;space=e-(n+c-$(window).scrollTop()),space<60?o.addClass("non-focus"):o.removeClass("non-focus")})}var $element=$(".each-event, .title"),$window=$(window);$window.on("scroll resize",check_for_fade),$window.trigger("scroll");
