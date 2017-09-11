@@ -1,0 +1,17 @@
+{
+    "name": "jc-ariya",
+    "icons": [
+        {
+            "src": "/assets/favicon/android-chrome-192x192-2da7230d4f672da997eb4f1f46d8d64916c56e0c690d4315d1cc1b886ae97163.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "/assets/favicon/android-chrome-512x512-5d49cbf1ddfb21a8601e6196fb31225e53e6d61d98ec460069b19cb120922a0c.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ],
+    "theme_color": "#ffffff",
+    "background_color": "#ffffff"
+}
